@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script>
+        const getUserInput =() =>{           
+           
+            const number = prompt("Enter number: ");
+            let fact = 1;
+            for(let i=1;i<=number;i++) 
+                fact = fact * i;
+            alert(fact);
+        }
+    </script>
+</head>
+<body>
+    <header class="row-alt">
+        <div class="lead container">
+            <h1>Problem Solving in JS # 4</h1> 
+            <div class="rightAlign">
+                <input class="btn btn-default" type="button" name="join" value="Validate" onclick="getUserInput()"> 
+            </div>
+        </div>
+        <div class="rightAlign">
+            
+        </div>
+        
+    </header>
+    <section>
+        <div class="flex-container1">
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Problem Statements</label>
+                </header>
+                <section>
+                    <label>Given a number n, find the factorial of the number</label>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Sample Input</label>
+                </header>
+                <section>
+                    <label>5</label>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Sample Output</label>
+                </header>
+                <section>
+                    <label>Explantation: Factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120</label>
+                </section>
+            </div>
+            
+        </div> 
+        <div class="flex-container1" >
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Pseudocode</label>
+                </header>
+                <section>
+                    <ul>
+                        <li> function getUserInput() </li>                       
+                        <li> Variable declaration - let fact = 1</li>
+                        <li> Iterate the array until fact value</li>
+                        <li> Update fact = fact * index;</li>                       
+                        <li> Display the output in the alert box</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Scratch Link</label>
+                </header>
+                <section>
+                    <a href="https://scratch.mit.edu/projects/726076895/" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
+                </section>
+            </div>
+        </div>     
+       
+        
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************************
+    Custom Section
+************************/
+.leftPanel{
+    height: 297vh;
+    float: left;
+    width: 5%;
+    background: darkcyan;
+}
+.middlePanel{
+    height: auto;
+    width: 65%;
+    
+}
+.rightPanel{
+    height: 100vh;
+    width: 25%; 
+    float: right;
+}
+.intro, .profile{    
+    padding-left: 4rem;
+}
+.profile{
+    padding-top: 4rem;
+}
+h1, h2, h3, h4, .aboutMe, span, .flex-container div{
+    padding-left: 1rem;
+}
+.aboutMe {
+    padding-top: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    color: darkcyan;
+    font-weight: bold;
+}
+h3 {
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+.intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: grey;
+    padding-top: 5rem;
+}  
+
+.flex-container, .parent-flex-container {
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;    
+    border: 1px solid #dfe2e5;
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.flex-container1 header, section, footer, .flex-container2 header, section, footer {
+    padding-top:1rem;
+    
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.desc{
+    width: 15em;
+}
+.year {
+    float: left;
+    font-weight: bold;
+}
+.compName {
+    float: right;
+    font-weight: bold;
+}
+.profilePhoto {    
+    padding-left: 1rem
+}
+.profilePhoto img {
+    border-radius: 50%;
+}
+.anchorImg {
+    float: right;
+}
+.skillName {
+    float: left;
+    padding-left: 2rem;
+    font-weight: bold;
+}
+.leftAlign {
+    padding-left: 1.5rem;
+}
+.txtBold {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

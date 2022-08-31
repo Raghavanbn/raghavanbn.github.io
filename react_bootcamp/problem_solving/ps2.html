@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest Number</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script>
+        const getUserInput =() =>{
+            const numbersArraysize = prompt("Enter ArrayList Size: ");
+            let numbers = [];
+
+            for(let i=1;i<=numbersArraysize;i++)           
+                numbers.push(prompt("Enter number: "));
+
+            alert("List of numbers : "+numbers+"\n"+" Greatest Number : "+Math.max.apply(null,numbers));
+        }
+    </script>
+</head>
+<body>
+    <header class="row-alt">
+        <div class="lead container">
+            <h1>Problem Solving in JS # 2</h1> 
+            <div class="rightAlign">
+                <input class="btn btn-default" type="button" name="join" value="Validate" onclick="getUserInput()"> 
+            </div>
+        </div>
+        <div class="rightAlign">
+            
+        </div>
+        
+    </header>
+    <section>
+        <div class="flex-container1">
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Problem Statements</label>
+                </header>
+                <section>
+                    <label>Find the greatest of all numbers from a list of numbers. The size of the list should be entered by the user. If the size of list if 5, your program to ask for 5 inputs from the user. Finally, show the greatest number in the list along with the list.</label>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Sample Input</label>
+                </header>
+                <section>
+                    <label>Enter the size of list: 4</label><br/>
+                    <label>Enter the number: 4 45 11 2</label>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Sample Output</label>
+                </header>
+                <section>
+                    <label>List of numbers: 4 10 12 3 <br/> Greatest number : 12</label>
+                </section>
+            </div>
+            
+        </div> 
+        <div class="flex-container1" >
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Pseudocode</label>
+                </header>
+                <section>
+                    <ul>
+                        <li> function getUserInput() </li>
+                        <li> Array declaration - let numbers[]</li>
+                        <li> Get array list size from the user</li>
+                        <li> Iterate the array until the size and get input from user</li>
+                        <li> store the numbers in numbers[] using push()</li>
+                        <li> Find the greatest number in an array using Math.max.apply()</li>                        
+                        <li> Display the output in the alert box</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="flex-container">
+                <header>
+                    <label class="textBold">Scratch Link</label>
+                </header>
+                <section>
+                    <a href="https://scratch.mit.edu/projects/722821234" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
+                </section>
+            </div>
+        </div>     
+       
+        
+    </section>
+    
+</body>
+</html>
