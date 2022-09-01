@@ -41,113 +41,86 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/************************
-    Custom Section
-************************/
-.leftPanel{
-    height: 297vh;
-    float: left;
-    width: 5%;
-    background: darkcyan;
-}
-.middlePanel{
-    height: auto;
-    width: 65%;
-    
-}
-.rightPanel{
-    height: 100vh;
-    width: 25%; 
-    float: right;
-}
-.intro, .profile{    
-    padding-left: 4rem;
-}
-.profile{
-    padding-top: 4rem;
-}
-h1, h2, h3, h4, .aboutMe, span, .flex-container div{
-    padding-left: 1rem;
-}
-.aboutMe {
-    padding-top: 1rem;
-}
-h2 {
-    font-size: 2rem;
-    color: darkcyan;
-    font-weight: bold;
-}
-h3 {
-    padding-top: 0.5rem;
-    font-weight: bold;
-}
-.intro h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: grey;
-    padding-top: 5rem;
-}  
-
 .flex-container, .parent-flex-container {
     display: flex;
     padding-top: 0.5rem;
+    height: auto;   
+     
+}
+.intro {    
+    padding-left: 2rem;
 }
 
-.flex-container1 {
-    display: flex;
-    flex-direction: column;
+
+.profile{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    max-width: 77%;
+}
+.intro h1 {
+    font-size: 3rem;    
+    color: grey;
+    padding-top: 5rem;
+} 
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+.leftpanel {
+    width: 5%;
+    background: darkcyan;
+}
+.middlepanel{   
+    max-width: auto;    
+   
+}
+
+h1, h2, h3, .aboutMe, span, .flex-container div, .profilePhoto{
+    padding-left: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    color: darkcyan;    
+}
+h3 {
+    padding-top: 0.5rem;   
+}
+
+.profilePhoto img {
+    border-radius: 50%;
+    max-width: 70%;
+}
+header, section, footer, .aboutMe {
+    padding-top:1rem;
+    
+}
+.projects {
     width: 25vw;    
-    border: 1px solid #dfe2e5;
+    border: 0.01rem solid #dfe2e5;
     border-radius: 5%;
     padding: 1rem;
     margin: 0.5rem;
 }
-
-.flex-container1 header, section, footer, .flex-container2 header, section, footer {
-    padding-top:1rem;
-    
-}
-
-.flex-container2 {
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    padding: 1rem;
-    margin: 0.5rem;
-}
-.desc{
-    width: 15em;
-}
-.year {
-    float: left;
-    font-weight: bold;
-}
-.compName {
-    float: right;
-    font-weight: bold;
-}
-.profilePhoto {    
-    padding-left: 1rem
-}
-.profilePhoto img {
-    border-radius: 50%;
-}
-.anchorImg {
-    float: right;
-}
-.skillName {
-    float: left;
-    padding-left: 2rem;
+h1, h2, h3, .txtBold {
     font-weight: bold;
 }
 .leftAlign {
-    padding-left: 1.5rem;
+  padding-left: 1.5rem;
+  display: block;
+  padding-top: 0.5rem;
 }
-.txtBold {
-    font-weight: bold;
+.rightSection {
+  padding-left: 2rem;
 }
-a {
-    text-decoration: none;
-    color: black;
+.contact {
+  padding-left: 0.2rem !important;
+}
+a{
+  text-decoration: none;
+  color: black;  
+}
+a:hover {
+  text-decoration: underline;
 }
