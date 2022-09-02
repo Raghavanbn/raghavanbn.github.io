@@ -47,6 +47,14 @@ table {
     height: auto;   
      
 }
+
+@media screen and (max-width: 855px) {
+  .flex-container {
+    display:flex;
+    flex-direction: column;
+  }
+}
+
 .intro {    
     padding-left: 2rem;
 }
@@ -103,6 +111,19 @@ header, section, footer, .aboutMe {
     padding: 1rem;
     margin: 0.5rem;
 }
+
+@media screen and (max-width: 855px) {
+  .projects {
+    width: auto;    
+    border: 0.01rem solid #dfe2e5;
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+
+
 h1, h2, h3, .txtBold {
     font-weight: bold;
 }
