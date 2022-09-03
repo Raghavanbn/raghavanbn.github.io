@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,138 +41,127 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
 
-.nav {
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+}
+.travel_time {
+    background-image: url("../images/bodybg.png");
+    height: 100vh;
+}
+
+nav {
     text-align: center;
-  }
-  .nav li {
+}
+nav li {
     display: inline-block;
-    margin: 0 26px;
-    vertical-align: top;
-  }
-  .nav li:last-child {
-    margin-right: 0;
-  }
-/*
-  ========================================
-  Buttons
-  ========================================
-*/
-
-.btn {
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 400;
-    letter-spacing: .5px;
-    margin: 0;
+    margin: 0.3rem;
     text-transform: uppercase;
-  }
-  .btn-default {
-    border: 0;
-    background: #09cf76;
-    padding: 11px 30px;
-    font-size: 14px;
-  }
-  .btn-default:hover {
-    background: #77a198;
-  }
-  .btn-alt {
-    border: 1px solid #fff;
-    padding: 10px 30px;
-  }
-  .btn-alt:hover {
-    background: #fff;
-    color: #09cf76;
-  }
-/*
-  ========================================
-  Custom styles
-  ========================================
-*/
-body {    
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.bodyBGImg {
-    background: url("../images/bodybg.png");
-    max-width: 100%;
-    height: 500px;
-}
-a {
+a {  
+    
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;    
 }
-a:hover{
+
+@media screen and (min-width: 760px) and (max-width: 1370px) {
+    nav a {
+      font-size: 1rem;
+   }
+}
+@media screen and (min-width: 280px) and (max-width: 655px) {
+  nav a {
+    font-size: 0.5rem;
+ }
+}
+nav a:hover {
     text-decoration: underline;
 }
-.primary-nav {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: .5px;
-    text-transform: uppercase;
+h1, h2, h3, h4, p {
+  color: #ffffff;
+  padding-top: 0.5rem;
 }
-h1, h2, h3, h4 {
-    color: #ffffff;
-  }
-  h1, h3, h4, h5, p {
-    margin-bottom: 22px;
-  }
-  h1 {
-    font-size: 36px;
-    line-height: 44px;
+h1 {
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding-top: 4rem;
 }
-.lead {
-    text-align: center;
-}
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 45px;
-}
-.lead p {
-    font-size: 1.5vw;
-    line-height: 2vw;
-    color: #ffffff;
-}
-.bottomContainer{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 81px;
-}
-.travelTimeImg {
-    background: url("../images/Travel_Time.png");
-    max-width: 100%;
-    height: auto;
-}
-.flex-container {
-    display: flex;  
-    display: -webkit-flex;    
-    align-items: center;
-    justify-content: space-around;   
-}
-.flex-container div{
-    margin: 0 3px;
-    padding: 10px;
-    max-height: 100%;    
-}
-.flex-container p {
-    color: #ffffff;
-    flex-wrap: wrap;
+.travel_time p {
+  color: #ffffff;
+  text-align: center;
 }
 
-.aboutUsImg {
-    background: url("../images/aboutus.png");
-    max-width: 100%;
-    height: 400px;  
-    background-position: center center;
+.btn {
+  border-radius: 0.3rem;
+  color: #ffffff;
+  cursor: pointer;  
+  letter-spacing: 0.1rem; 
+  text-transform: uppercase;
+  padding-left: 10rem;
 }
-.aboutUsImg .lead{
-  text-align: left;
+.btn-default {
+  border: 0;
+  background: #09cf76;
+  padding: 0.7rem 1.3rem;
+  font-size: 0.9rem;
 }
+.btn-default:hover {
+  background: #77a198;
+}
+.bottomContainer{
+  text-align: center;
+  padding-top: 15rem;
+}
+.sight_sseing {
+  background-image: url("../images/Travel_Time.png");
+  height:auto;
+  
+}
+.flex-container {
+  display: flex;  
+  display: -webkit-flex;  
+}
+@media screen and (max-width: 950px) {
+  .flex-container { 
+    flex-direction: column; 
+    
+  }
+  .imageSize {
+    max-width: 35vw;
+  }
+  .flex-container div{
+    margin: 0 0.2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    max-width: 85%;   
+  }
+  
+}
+.flex-container div{
+  margin: 0 0.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  max-width: 85%;    
+}
+.imageSize {
+  max-width: 20vw;
+}
+.aboutus{
+  background-image: url("../images/aboutus.png");
+  background-position: center center;
+  height: 82vh;
+}
+.aboutus p {
+  padding-left: 1rem;
+  padding-top: 5rem;
+}
+.rightAlign {
+  float: right;
+}
+
+
