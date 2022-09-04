@@ -27,32 +27,16 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.flex-container, .parent-flex-container {
-    display: flex;
-    padding-top: 0.5rem;
+
+/* Custom Design */
+
+.parent-flex-container, .flex-container, .flex-container1 {
+    display: flex;    
+    padding-top: 0.5rem;  
+    flex-direction: row;  
+}
+.autoheight {
     height: auto;
-}
-@media screen and (max-width: 950px) {
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-   }
-}
-.intro {
-    padding-left: 2rem;
-}
-.profile {
-    padding-top: 4rem;
-    padding-left: 2rem;
-    max-width: 77%;
-}
-.intro h1 {
-    font-size: 3rem;
-    color: grey;
-    padding-top: 5rem;
-}
-.wrap {
-    flex-wrap: wrap;
 }
 .leftpanel {
     min-width: 0.5rem;
@@ -60,31 +44,38 @@ table {
     white-space: nowrap;
 }
 .middlepanel {
-    max-width: auto;
-}
-h1, h2, h3, .aboutMe, span, .flex-container div, .profilePhoto {
     padding-left: 1rem;
+    padding-top: 4rem;
 }
-h2 {
-    font-size: 2rem;
-    color: darkcyan;
-}
-h3 {
+h1, h3, h4, p, header, section, footer {
     padding-top: 0.5rem;
 }
-.profilePhoto img {
-    border-radius: 50%;
-    max-width: 70%;
+h1, h2, h3, h4, p {
+    padding-left: 1rem;
 }
-header, section, footer, .aboutMe {
-    padding-top: 1rem;
+h1 {
+    color: grey;    
+}
+h2{
+    padding-top: 3rem;
+    color: darkcyan;    
+}
+.flex-container-col {
+    display: flex;    
+    flex-direction: column;
 }
 .projects {
     width: 25vw;
     border: 0.01rem solid #dfe2e5;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem;
     margin: 0.5rem;
+}
+.txtBold {
+    font-weight: bold;
+}
+.alignRight {
+    float:right;
 }
 @media screen and (max-width: 950px) {
     .projects {
@@ -94,21 +85,12 @@ header, section, footer, .aboutMe {
         padding: 1rem;
         margin: 0.5rem;
    }
+   .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
-h1, h2, h3, .txtBold {
-    font-weight: bold;
-}
-.leftAlign {
-    padding-left: 1.5rem;
-    display: block;
-    padding-top: 0.5rem;
-}
-.rightSection {
-    padding-left: 2rem;
-}
-.contact {
-    padding-left: 0.2rem !important;
-}
+
 a {
     text-decoration: none;
     color: black;
@@ -116,9 +98,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.anchorImg {
-    float: right;
+.rightsection {
+    padding-left: 1rem; 
+
 }
-.displayBlock {
+
+.profilePhoto{
+    padding-left: 2rem;
+}
+
+.leftAlign {
+    padding-left: 1.5rem;
     display: block;
+    padding-top: 0.5rem;
 }
+
+.profilePhoto img {
+    border-radius: 50%;
+    max-width: 15vw;
+   
+}
+
+
+
