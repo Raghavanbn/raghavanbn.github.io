@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duplicate Elements</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
     <script>
         const getUserInput =() =>{           
             let numbers = [];
@@ -20,76 +20,87 @@
     </script>
 </head>
 <body>
-    <header class="row-alt">
-        <div class="lead container">
-            <h1>Problem Solving in JS # 3</h1> 
-            <div class="rightAlign">
-                <input class="btn btn-default" type="button" name="join" value="Validate" onclick="getUserInput()"> 
-            </div>
+    <div class="parent-flex-container">
+        <div class="row-alt">
+            <header>
+                <h1>Problem Solving in JS # 3</h1>
+            </header>
         </div>
-        <div class="rightAlign">
+        <div>          
+            <div class="flex-container">
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Problem Statements</label>
+                    </header>
+                    <section>
+                        <label>Given an array of 10 numbers, find the count of duplicates in the array.</label>
+                    </section>
+                </div> 
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Sample Input</label>
+                    </header>
+                    <section>
+                        <label>[3, 5, 7, 10, 3, 2, 1, 10]</label>                        
+                    </section>
+                </div>
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Sample Output</label>
+                    </header>
+                    <section>
+                        <label>Count of duplicates: 2 (As 3 and 10 are duplicated)</label>
+                    </section>
+                </div>              
+            </div>  
             
+            <div class="flex-container">
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Pseudocode</label>
+                    </header>
+                    <section>
+                        <ul>
+                            <li> function getUserInput() </li>
+                            <li> Array declaration - let numbers[]</li>
+                            <li> Itertate the array for 10 times</li>
+                            <li> Store user input value in an array numers[] using push()</li>
+                            <li>Array declaration - const duplicates[]</li>
+                            <li> Use filter() on numbers[] </li>
+                            <li>And store the dupliucate elements in duplicates[]</li>
+                            <li> Display the output in the alert box</li>
+                        </ul>
+                    </section>
+                </div> 
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Assumptions</label>
+                    </header>
+                    <section>
+                        <label>User will input only positive numeric values</label><br/>                        
+                    </section>
+                </div>
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Scratch Link</label>
+                    </header>
+                    <section>
+                        <a href="https://scratch.mit.edu/projects/726068944/" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
+                    </section>
+                </div>               
+            </div> 
+            <div class="flex-container">
+                <section class="leftAlign">
+                    <input class="btn btn-default" type="button" name="validate" value="Validate" onclick="getUserInput()"> 
+                </section>
+            </div>        
         </div>
-        
-    </header>
-    <section>
-        <div class="flex-container1">
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Problem Statements</label>
-                </header>
-                <section>
-                    <label>Given an array of 10 numbers, find the count of duplicates in the array.</label>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Sample Input</label>
-                </header>
-                <section>
-                    <label> [3, 5, 7, 10, 3, 2, 1, 10]</label>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Sample Output</label>
-                </header>
-                <section>
-                    <label>Count of duplicates: 2 (As 3 and 10 are duplicated)</label>
-                </section>
-            </div>
+        <div>
+            <section>
             
-        </div> 
-        <div class="flex-container1" >
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Pseudocode</label>
-                </header>
-                <section>
-                    <ul>
-                        <li> function getUserInput() </li>
-                        <li> Array declaration - let numbers[]</li>
-                        <li> Itertate the array for 10 times</li>
-                        <li> Store user input value in an array numers[] using push()</li>
-                        <li>Array declaration - const duplicates[]</li>
-                        <li> Use filter() on numbers[] </li>
-                        <li>And store the dupliucate elements in duplicates[]</li>
-                        <li> Display the output in the alert box</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Scratch Link</label>
-                </header>
-                <section>
-                    <a href="https://scratch.mit.edu/projects/726068944/" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
-                </section>
-            </div>
-        </div>     
-       
-        
-    </section>
+           </section>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -24,76 +24,87 @@
     </script>
 </head>
 <body>
-    <header class="row-alt">
-        <div class="lead container">
-            <h1>Problem Solving in JS # 1</h1> 
-            <div class="rightAlign">
-                <input class="btn btn-default" type="button" name="join" value="Validate" onclick="getUserInput()"> 
-            </div>
+    <div class="parent-flex-container">
+        <div class="row-alt">
+            <header>
+                <h1>Problem Solving in JS # 1</h1>
+            </header>
         </div>
-        <div class="rightAlign">
+        <div>          
+            <div class="flex-container">
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Problem Statements</label>
+                    </header>
+                    <section>
+                        <label>Accept 10 numbers from the user and print in the alert box if it is odd or even. The final output should look like below</label>
+                    </section>
+                </div> 
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Sample Input</label>
+                    </header>
+                    <section>
+                        <label>3, 4, 9, 6</label>                        
+                    </section>
+                </div>
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Sample Output</label>
+                    </header>
+                    <section>
+                        <label>3 - odd 4 - even 9 - odd 6 - even</label>
+                    </section>
+                </div>              
+            </div>  
             
+            <div class="flex-container">
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Pseudocode</label>
+                    </header>
+                    <section>
+                        <ul>
+                            <li> function getUserInput() </li>
+                            <li> Array declaration - let numbers[]</li>
+                            <li> Variable declaration - isEven = val => val % 2 == 0</li>
+                            <li> Store user input value in a variable num</li>
+                            <li> Pass the num to isEven function</li>
+                            <li> If return true it is a even number, otherwise odd number</li>
+                            <li>Add to numbers[] using push()</li>                        
+                            <li> Display the output in the alert box</li>
+                        </ul>
+                    </section>
+                </div> 
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Assumptions</label>
+                    </header>
+                    <section>
+                        <label>User will input only positive numeric values</label><br/>                        
+                    </section>
+                </div>
+                <div class="flex-container-col">
+                    <header>
+                        <label class="textBold">Scratch Link</label>
+                    </header>
+                    <section>
+                        <a href="https://scratch.mit.edu/projects/722530184" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
+                    </section>
+                </div>               
+            </div> 
+            <div class="flex-container">
+                <section class="leftAlign">
+                    <input class="btn btn-default" type="button" name="validate" value="Validate" onclick="getUserInput()"> 
+                </section>
+            </div>        
         </div>
-        
-    </header>
-    <section>
-        <div class="flex-container1">
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Problem Statements</label>
-                </header>
-                <section>
-                    <label>Accept 10 numbers from the user and print in the alert box if it is odd or even. The final output should look like below:</label>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Sample Input</label>
-                </header>
-                <section>
-                    <label>3,  4,  9,  6</label>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Sample Output</label>
-                </header>
-                <section>
-                    <label>3 - odd  4 - even 9 - odd  6 - even</label>
-                </section>
-            </div>
+        <div>
+            <section>
             
-        </div> 
-        <div class="flex-container1" >
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Pseudocode</label>
-                </header>
-                <section>
-                    <ul>
-                        <li> function getUserInput() </li>
-                        <li> Array declaration - let numbers[]</li>
-                        <li> Variable declaration - isEven = val => val % 2 == 0</li>
-                        <li> Store user input value in a variable num</li>
-                        <li> Pass the num to isEven function</li>
-                        <li> If return true it is a even number, otherwise odd number</li>
-                        <li> Add to numbers[] using push()</li>
-                        <li> Display the output in the alert box</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="flex-container">
-                <header>
-                    <label class="textBold">Scratch Link</label>
-                </header>
-                <section>
-                    <a href="https://scratch.mit.edu/projects/722530184" target="_blank"><img src="assets/images/scratch.jpg" alt="Scratch Link"></a> 
-                </section>
-            </div>
-        </div>     
-       
-        
-    </section>
+           </section>
+        </div>
+    </div>
     
 </body>
 </html>
