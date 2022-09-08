@@ -89,6 +89,9 @@ h2{
         display: flex;
         flex-direction: column;
     }
+    .align-center {
+        padding-left: 0rem !important;
+    }
 }
 
 a {
@@ -118,6 +121,8 @@ a:hover {
     max-width: 15vw;
    
 }
-
+.align-center {
+    padding-left: 7rem;
+}
 
 

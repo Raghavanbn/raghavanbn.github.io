@@ -149,7 +149,7 @@ h1 {
   max-width: 85%;    
 }
 .imageSize {
-  max-width: 20vw;
+  max-width: 100%;
 }
 .aboutus{
   background-image: url("../images/aboutus.png");
