@@ -37,5 +37,6 @@ const kural = {
         this.chapgrp_eng.innerHTML = result.chapgrp_eng;
         this.chap_eng.innerHTML = result.chap_eng;
         this.kural_eng_line.innerHTML = result.eng;
+        document.getElementById("kural_num").value = result.number;
     }
 }
