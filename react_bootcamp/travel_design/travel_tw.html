@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Design Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col">
+        <section class="bg-[url('assets/images/bodybg.png')] bg-no-repeat h-auto bg-center">           
+                
+            <ul id="menu" class="hidden text-center py-10 text-white uppercase hover:underline
+            bg-gray-800 z-50 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 md:py-10
+            md:justify-evenly">
+                <li class="md:hidden z-90 fixed top-4 right-6">
+                    <a href="javascript:void(0)" class="text-right text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="flex items-center md:hidden">
+                <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div> 
+            <div class="text-white text-center">
+                <h1 class="text-4xl">Travel Time</h1>
+                <p class="p-2">let's travel with us we will start a new adventure together with full of <br/>happiness and laughs</p>
+                <div class="pt-60">
+                    <button class="bg-[#09cf76] uppercase py-3 px-5 rounded-lg cursor-pointer tracking-widest"> Join </button>
+                </div>
+            </div>
+            <br/><br/>
+        </section>
+        <section class="bg-[url('assets/images/Travel_Time.png')] h-auto">
+            <div class="text-white text-center py-10">
+                <h1 class="text-4xl">Where do you want to go</h1>
+            </div>
+            <div class="justify-between text-white p-4 md:flex md:flex-col lg:flex lg:flex-row ">
+                <div class="w-[85%] my-0 mx-1">
+                    <img  src="assets/images/Group1.png" alt="Moutain1">
+                    <h3>Mountain</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit 
+                    interdum, ac aliquet odio  mattis. Class aptent taciti sociosqu ad litora .
+                    </p>
+                    <div class="float-right">
+                        <a class="hover:underline"  href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="w-[85%] my-0 mx-1">
+                    <img  src="assets/images/Group2.png" alt="Moutain1">
+                    <h3>Mountain</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit 
+                    interdum, ac aliquet odio  mattis. Class aptent taciti sociosqu ad litora .
+                    </p>
+                    <div class="float-right">
+                        <a class="hover:underline"  href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="w-[85%] my-0 mx-1">
+                    <img  src="assets/images/Group3.png" alt="Moutain1">
+                    <h3>Mountain</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit 
+                    interdum, ac aliquet odio  mattis. Class aptent taciti sociosqu ad litora .
+                    </p>
+                    <div class="float-right">
+                        <a class="hover:underline"  href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="w-[85%] my-0 mx-1">
+                    <img  src="assets/images/Group4.png" alt="Moutain1">
+                    <h3>Mountain</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit 
+                    interdum, ac aliquet odio  mattis. Class aptent taciti sociosqu ad litora .
+                    </p>
+                    <div class="float-right">
+                        <a class="hover:underline"  href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[url('assets/images/aboutus.png')] h-auto bg-center">
+            <div class="text-white py-10">
+                <h1 CLASS="text-center text-4xl">About US</h1>
+                <p class="p-8">
+                    lLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+                </p>
+            </div>            
+        </section>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+        function toggleMenu() {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('h-screen');
+        }
+    </script>
+</body>
+</html>
