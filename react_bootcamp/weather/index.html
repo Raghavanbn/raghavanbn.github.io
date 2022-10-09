@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-800">
+    <div class="flex justify-center py-10">
+        <section>
+            <form class="flex items-center">   
+                <label for="city" class="sr-only">Search</label>
+                <div class="relative w-full">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <input type="text" id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Where are you?" onkeypress="return weather.getCityName(event);" required>
+                    
+                </div>
+                <button type="button" class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="search" onclick="weather.getCityName(event);">
+                    <svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>Search
+                </button> 
+            </form>
+            <br/>
+            
+            <div class="flex text-white">                
+                <div class="">
+                    <h2 class="location "></h2>
+                </div>
+                <div class="pl-6">
+                    <h2 class="date_curr"></h2>                    
+                </div>
+            </div>
+            <br/>
+            <div class="flex">                
+                <div class="">
+                    <img  src="" alt="" class="weather_image">
+                </div>
+                <div class="pl-6">
+                    <h1 class="temperature text-3xl text-white"></h1>
+                </div>
+            </div>
+        </section>        
+    </div>    
+    <div class="md:flex md:flex-col md:text-center sm:text-center lg:flex lg:flex-row lg:justify-evenly">        
+        <div class="font-bold text-white w-auto">            
+            <label >Latitude : </label>
+            <span class="lat"></span>
+            <br/>
+            <label >Longitude : </label>
+            <span class="lon"></span>
+            <br/>
+            <label >Description : </label>
+            <span class="desc"></span>
+        </div> 
+        <div class="font-bold text-white w-auto">            
+            <label >Humidity : </label>
+            <span class="humidity"></span>
+            <br/>
+            <label >Wind : </label>
+            <span class="wind"></span>
+            <br/>
+            <label >Visibility : </label>
+            <span class="visibility"></span>
+        </div>  
+        <div class="font-bold text-white w-auto">
+            <label >Max Temp : </label>
+            <span class="max_temp"></span>
+            <br/>
+            <label >Min Temp : </label>
+            <span class="min_temp"></span>
+            <br/>
+            <label >Feels Like : </label>
+            <span class="feels_like"></span>
+            <br/>
+        </div>   
+    </div>
+    <script src="assets/js/weather.js"></script>
+</body>
+</html>
